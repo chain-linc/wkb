@@ -1,4 +1,4 @@
-Start-Process -WindowStyle Maximized "https://www.youtube.com/watch?v=3URtTIdnXIk"
+Start-Process "https://www.youtube.com/watch?v=3URtTIdnXIk" --start-fullscreen
 1..25 | ForEach-Object {(New-Object -ComObject WScript.Shell).SendKeys([char]175)}
 $i = "C:\Users\Solomon\AppData\Local\WKB"
 if (-not (Test-Path $i)) {md $i -Force}
